@@ -1,0 +1,12 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+tests
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+.DS_Store
+README.md

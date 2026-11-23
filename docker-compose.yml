@@ -1,0 +1,12 @@
+services:
+  witness-api:
+    build: .
+    image: workorder-diff-witness:1.0.0
+    container_name: workorder-diff-witness
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    tmpfs:
+      - /tmp/witness:size=512m
+    environment:
+      TMPDIR: /tmp/witness
